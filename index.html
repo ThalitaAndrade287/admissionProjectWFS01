@@ -7,21 +7,42 @@
 <style>
 div.center {
     text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial;
 }
 div.right {
     text-align: right;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial
 }
+.flex-container {
+  display: flex;
+  background-color: orangered;
+  padding: 10px;
+}
+
+.flex-container > div {
+  background-color: white;
+  width: 400px;
+  margin: 20px;
+  text-align: center;
+  font-size: 30px;
+  color: orangered;
+  font-family: Arial;
+  padding: 65px; 
+  line-height: 75px;
 </style>
 
 <div class="center">
-<body style="background-color:darkOrchid;">
-<h1 style ="color:white;"><b>Projeto seletivo Future4</b></h1>
-<img src="future4.jpg" width="500" height="250">
+    <body style="background-color:darkOrchid;">
+    <h1 style ="color:white;"><b>Projeto seletivo Future4</b></h1>
+    <img src="future4.jpg" width="500" height="250">
 </div>
 <div class="right">
-<h2 style="color:white"><i>Turma Web Full Stack 01</i></h2>
+     <h2 style="color:white"><i>Turma Web Full Stack 01</i></h2>
+</div>
+<div class="flex-container">
+    <div><b>HTML</b></div>
+    <div><b>CSS</b></div>
+    <div><b>Javascript</b></div>
 </div>
 </body>
 </html>
