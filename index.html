@@ -13,6 +13,14 @@ div.right {
     text-align: right;
     font-family: Arial
 }
+.grid-container > div {
+    background-color: rgb(206, 188, 188);
+    width: 150;
+  margin: 0px;
+  text-align: center;
+  padding: 50px; 
+  line-height: 80px;
+}
 .flex-container {
   display: flex;
   background-color: orangered;
@@ -30,6 +38,12 @@ div.right {
   padding: 65px; 
   line-height: 75px;
 </style>
+<script>
+function myFunction() {
+email = document.getElementById("input_email").value;
+alert ( "O email " +email+ " foi enviado");
+}
+</script>
 
 <div class="center">
     <body style="background-color:darkOrchid;">
@@ -44,5 +58,13 @@ div.right {
     <div><b>CSS</b></div>
     <div><b>Javascript</b></div>
 </div>
+<div class="grid-container">
+<div>
+<input id="input_email" placeholder="Coloque aqui o seu email" style="height: 50px; width: 500px; margin:0px; font-size: 30px; font-family: Arial;">
+<button style="background-color:orangered; font-family: Arial; height: 50px; width: 200px; color:white;font-size: 30px; margin: 0px;" type="button     " onclick="myFunction()">Enviar</button>
+<p style="color: white" id="welcome_saida"></p>
+</div>
+</div>
+
 </body>
 </html>
