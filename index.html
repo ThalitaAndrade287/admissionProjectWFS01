@@ -8,34 +8,35 @@
 
 .grid-container  {
   display: grid;
-  grid-gap: 10px;
   background-color: darkslateblue;
   padding: 10px;
-  
+  margin-left: -10px;
+  margin-top: -10px;
+  margin-right: -10px;
 }
-.grid-container > div {
-    width: 10px;
-  margin: 0px;
-  padding: 10px;
-  line-height: 10px;
-    
-}
+
 .grid-container1 > div {
     background-color: gray;
-    width: 150;
-  margin: 0px;
+  margin-top: 0px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: -10px;
   text-align: center;
-  padding: 50px; 
-  line-height: 80px;
+  padding-top: 80px;
+  padding-bottom: 60px;
 }
+
 .flex-container {
   display: flex;
   background-color: orangered;
   padding: 10px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .flex-container > div {
   background-color: white;
+  box-align: center;
   width: 400px;
   margin: 20px;
   text-align: center;
@@ -44,13 +45,18 @@
   font-family: Arial;
   padding: 65px; 
   line-height: 75px;
+
 </style>
+
 <script>
+
 function myFunction() {
 email = document.getElementById("input_email").value;
 alert ( "O email " +email+ " foi enviado");
 }
+
 </script>
+
 <div class="grid-container">
     <h1 style ="color: white; text-align: center; font-family: Arial; margin: 100px; margin-top:80px"><b>Projeto seletivo Future4</b></h1>
     <center>
@@ -64,6 +70,7 @@ alert ( "O email " +email+ " foi enviado");
     <div><b>CSS</b></div>
     <div><b>Javascript</b></div>
 </div>
+
 <div class="grid-container1">
 <div>
 <input id="input_email" placeholder="Coloque aqui o seu email" style="height: 50px; width: 500px; margin:0px; font-size: 30px; font-family: Arial;">
